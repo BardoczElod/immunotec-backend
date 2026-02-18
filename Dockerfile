@@ -6,10 +6,9 @@ COPY tsconfig.json ./
 COPY src ./src
 COPY products.json ./
 EXPOSE 4000
-# Install dependencies and build app
+# Install dependencies
 RUN npm install --legacy-peer-deps
 COPY . .
-RUN npm run build
 
-# Use production start script
-CMD ["npm", "run", "start"]
+# Use development start script for autorefresh
+CMD ["npm", "run", "dev"]
