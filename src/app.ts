@@ -20,7 +20,7 @@ app.use(cors({
 // Explicitly set Access-Control-Allow-Origin for all responses
 app.use((req, res, next) => {
   const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin)) {
+  if (typeof origin === 'string' && allowedOrigins.includes(origin)) {
     res.header('Access-Control-Allow-Origin', origin);
   }
   next();
