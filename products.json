@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Immunolocal",
+    "price": 50,
+    "description": "Immunocal® is an all-natural protein with the highest biological value of any edible protein, and clinically proven to...",
+    "img": "/uploads/1771059919140-536910297.webp",
+    "link": "https://www.immunotec.com/en-150/emese2841197/products/immunocal"
+  },
+  {
+    "name": "IMMUNOCAL PLATINUM",
+    "price": 164,
+    "description": "Immunocal Platinum offers a comprehensive solution for promoting healthy aging.* This advanced formula...",
+    "img": "https://immunotec.com/images/immunocal-platinum.png"
+  },
+  {
+    "name": "IMMUNOCAL SPORT",
+    "price": 169,
+    "description": "The world's first patented and proven glutathione precursor of its kind, powered by Nitro Boost. This advance...",
+    "img": "https://immunotec.com/images/immunocal-sport.png"
+  },
+  {
+    "name": "IMMUNOCAL BOOSTER ENERGY PERFORMANCE",
+    "price": 85,
+    "description": "This is the clean, fast-acting, healthy energy you've been searching for! With Exclusive Nrf2 Catalyst™: one of the...",
+    "img": "https://immunotec.com/images/immunocal-booster.png"
+  },
+  {
+    "name": "test",
+    "price": 0,
+    "description": "desc",
+    "img": "https://www.immunotec.com/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252Ffdb4d79bfbfd478d89398007f8c29424%252F4865128a4f2d4f25970c90979524c266&w=640&q=100",
+    "link": "https://www.immunotec.com/en-US/emese2841197/products/immunocal-booster-energy-performance"
+  }
+]
