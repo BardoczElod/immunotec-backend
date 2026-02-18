@@ -6,22 +6,25 @@ import cors from 'cors';
 
 const app = express();
 
+
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://immunotec-ro.onrender.com'
+  'https://immunotec-ro.onrender.com',
+  'https://immunotec.onrender.com'
 ];
 app.use(cors({
-  origin: function (origin, callback) {
-    // allow requests with no origin (like mobile apps, curl, etc.)
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: allowedOrigins,
   credentials: true
 }));
+
+// Explicitly set Access-Control-Allow-Origin for all responses
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.header('Access-Control-Allow-Origin', origin);
+  }
+  next();
+});
 
 // Remove a product by index
 app.delete('/products/:index', authenticate, (req: Request, res: Response) => {

@@ -23,5 +23,12 @@
     "price": 85,
     "description": "This is the clean, fast-acting, healthy energy you've been searching for! With Exclusive Nrf2 Catalyst™: one of the...",
     "img": "https://immunotec.com/images/immunocal-booster.png"
+  },
+  {
+    "name": "test",
+    "price": 0,
+    "description": "",
+    "img": "/uploads/1771436141877-329113390.webp",
+    "link": ""
   }
 ]
