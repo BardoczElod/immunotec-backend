@@ -10,7 +10,8 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:3000',
   'https://immunotec-ro.onrender.com',
-  'https://immunotec.onrender.com'
+  'https://immunotec.onrender.com',
+  'https://immunotec.ro'
 ];
 app.use(cors({
   origin: allowedOrigins,
